@@ -37,7 +37,7 @@ main figure {
     flex-direction: column;
 }
 
-figure img {
+main figure img {
     border: 5px solid #d9043d;
 }
 
@@ -51,4 +51,32 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+    
+    body {
+        font-size: 100%;
+    }
+
+    header {
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    main figure {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 2rem 1rem 2rem
+    }
+
+    main figure img {
+        max-width: 300px;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
 }
