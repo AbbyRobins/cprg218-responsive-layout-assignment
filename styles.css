@@ -29,9 +29,10 @@ h1 {
 
 main figure {
     margin: 0;
-    padding: 2rem 2rem;
+    padding: 2rem 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
 }
 
 main figure img {
@@ -64,7 +65,7 @@ footer {
 
     main figure {
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         gap: 1rem;
         padding: 2rem;
     }
@@ -72,6 +73,10 @@ footer {
     main figure img {
         max-width: 300px;
         height: auto;
+    }
+
+    figcaption h2 {
+        margin-top: 0;
     }
 }
 
